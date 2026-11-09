@@ -1,0 +1,10 @@
+# 反编译流水线中间产物与本地工具（可随时由 tools/decompile.sh 重新生成）
+.tools/
+.decompile-stage/
+tools/refstub/out/
+tools/refstub/bin/
+tools/refstub/obj/
+
+# 构建/系统垃圾
+.DS_Store
+*.user

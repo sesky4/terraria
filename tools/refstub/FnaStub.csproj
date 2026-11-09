@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    参考程序集桩 (reference stub) —— 只用于反编译时的类型解析，不参与游戏运行。
+
+    Terraria.exe 依赖 FNA (Microsoft.Xna.Framework 的实现) 26.3.0.0。反编译器要正确
+    还原 Vector2/Color/Rectangle 等类型的静态成员引用，就必须能找到这个程序集；
+    否则会退化成满屏 "Unknown result type" 注释，源码可读性大幅下降。
+
+    FNA 只以源码形式分发（不在 NuGet 上），因此这里手写一份最小的 API 桩：
+    只需要类名、静态成员名与签名正确，方法体全部为空。
+  -->
+  <PropertyGroup>
+    <TargetFramework>net40</TargetFramework>
+    <AssemblyName>FNA</AssemblyName>
+    <AssemblyVersion>26.3.0.0</AssemblyVersion>
+    <FileVersion>26.3.0.0</FileVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <NoWarn>CS0169;CS0649;CS0067;CS0414;CS1591;CS0108</NoWarn>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+</Project>

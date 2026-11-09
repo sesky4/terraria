@@ -1,0 +1,6 @@
+# 反编译源码为生成产物：
+#   - linguist-vendored 让 GitHub 语言统计不计入这些文件
+#   - linguist-generated 让 GitHub 默认在 diff 中折叠它们
+# 自己看 PR 时如果想展开差异，可在 URL 后加 ?hide-generated-files=false
+decompiled/** linguist-vendored linguist-generated=true
+decompiled/** -diff
